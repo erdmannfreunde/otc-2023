@@ -38,6 +38,16 @@
     bottom: -5rem;
   }
 
+  #{headings()} {
+    color: var(--color-text-inverted);;
+  }
+
+  .card {
+    #{headings()} {
+      color: var(--color-brand-primary-dark);
+    }
+  }
+
   a {
     color: inherit;
   }
