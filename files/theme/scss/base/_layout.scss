@@ -22,6 +22,17 @@
   }
 }
 
+// #topbar
+[id='topbar'] {
+  > .inside {
+    @include padding-default(var(--base-spacing-unit));
+    @include wrapper-max();
+
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
 // #header
 [id='header'] {
   .inside {
