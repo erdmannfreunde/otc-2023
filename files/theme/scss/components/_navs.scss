@@ -11,6 +11,70 @@
 @import '../../../assets/nutshell/scss/components/navs';
 
 // --------------------------------------------------
+.nav--contact {
+  font-size: var(--nav-contact-font-size);
+  font-weight: var(--nav-contact-font-weight);
+
+  .level_1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  a,
+  strong {
+    display: block;
+    color: var(--nav-contact-color);
+    padding: var(--nav-contact-item-padding);
+
+    @include media-query(screen-menu) {
+      margin:  var(--nav-contact-item-padding);
+      margin-bottom: 0;
+    }
+  }
+
+  a.phone,
+  a.mail,
+  a.opening_hours {
+    &::before {
+      content: '';
+      width: var(--base-spacing-unit);
+      height: var(--base-spacing-unit);
+      display: inline-block;
+      vertical-align: text-bottom;
+      margin-right: var(--base-spacing-unit-xs);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  a.phone {
+    &::before {
+      background-image: url('/files/theme/img/icons/phone.svg');
+    }
+  }
+
+  a.mail {
+    &::before {
+      background-image: url('/files/theme/img/icons/mail.svg');
+    }
+  }
+
+  a.opening_hours {
+    @extend %button;
+
+    background: var(--color-blue-alpha);
+    font-weight: 600;
+    color: var(--color-brand-primary);
+    padding-left: var(--base-spacing-unit-sm);
+
+    &::before {
+      background-image: url('/files/theme/img/icons/opening_hours.svg');
+    }
+  }
+}
 
 .nav--right {
   justify-self: end;

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Pfad_322" data-name="Pfad 322" d="M0,0H20V20H0Z" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_657" data-name="Gruppe 657" transform="translate(0 24)">
+    <g id="Gruppe_661" data-name="Gruppe 661" transform="translate(0 -24)">
+      <g id="Gruppe_658" data-name="Gruppe 658" clip-path="url(#clip-path)">
+        <g id="Gruppe_657-2" data-name="Gruppe 657">
+          <path id="Pfad_321" data-name="Pfad 321" d="M0,0H20V20H0Z" fill="none" stroke="rgba(112,112,112,0.01)" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Gruppe_660" data-name="Gruppe 660" clip-path="url(#clip-path)">
+        <g id="Gruppe_659" data-name="Gruppe 659" transform="translate(1.667 1.55)">
+          <path id="Pfad_323" data-name="Pfad 323" d="M18.667,5.077,14.833,1.86,13.758,3.135l3.833,3.217ZM6.9,3.135,5.833,1.86,2,5.068,3.075,6.343,6.9,3.135Zm3.85,3.842H9.5v5l3.958,2.375.625-1.025L10.75,11.352Zm-.417-3.333a7.5,7.5,0,1,0,7.5,7.5A7.5,7.5,0,0,0,10.333,3.643Zm0,13.333a5.833,5.833,0,1,1,5.833-5.833A5.829,5.829,0,0,1,10.333,16.977Z" transform="translate(-2 -1.86)" fill="#003f88"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
