@@ -1,0 +1,47 @@
+// *
+// * Erdmann & Freunde
+// * OPTIMIST Contao Theme
+// * erdmann-freunde.de/produkte/contao-themes/optimist/
+// *
+
+//
+// COMPONENTS/SLIDER
+// --------------------------------------------------
+
+@import '../../../assets/nutshell/scss/components/slider';
+
+// --------------------------------------------------
+
+// sass-lint:disable no-universal-selectors
+.slider {
+  .slider-wrapper {
+    > * {
+      margin-bottom: 0;
+    }
+  }
+
+  .slider-control {
+    a {
+      width: calc(var(--slider-arrow-size) + var(--slider-arrow-padding) * 2);
+      height: calc(var(--slider-arrow-size) + var(--slider-arrow-padding) * 2);
+      overflow: hidden;
+      font-family: var(--base-font-family);
+    }
+  }
+
+  .slider-prev {
+    &::before {
+      content: '←';
+    }
+  }
+
+  .slider-next {
+    &::before {
+      content: '→';
+    }
+  }
+
+  .slider-menu {
+    font-size: var(--slider-menu-point-size);
+  }
+}

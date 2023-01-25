@@ -1,0 +1,25 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.buildpath
+.project
+.settings/
+.build/
+.idea/
+nbproject/
+
+# Generated files & folders
+/assets/
+/config/
+/contao-manager/
+/system/
+/var/
+/vendor/
+/public/
+
+
+# Composer
+composer.phar
+composer.lock

@@ -1,0 +1,72 @@
+// *
+// * Erdmann & Freunde
+// * OPTIMIST Contao Theme
+// * erdmann-freunde.de/produkte/contao-themes/optimist/
+// *
+
+//
+// BASE/LAYOUT
+// --------------------------------------------------
+
+@import '../../../assets/nutshell/scss/base/layout';
+
+// --------------------------------------------------
+
+// nav--mobile--active
+.html--fixed {
+  @include media-query(screen-menu-max) {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+// #header
+[id='header'] {
+  .inside {
+    padding-top: var(--base-spacing-unit);
+    padding-bottom: var(--base-spacing-unit);
+    display: grid;
+    grid-template-columns: auto auto;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    position: relative;
+
+    @supports not (display: grid) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  }
+
+  html {
+    &.html--fixed & {
+      pointer-events: none;
+    }
+  }
+}
+
+// #footer
+[id='footer'] {
+  border-top: var(--base-border);
+
+  .inside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: var(--base-spacing-unit);
+    padding-bottom: var(--base-spacing-unit-xs);
+
+    @include media-query(screen-xl) {
+      padding-top: var(--base-spacing-unit-lg);
+      padding-bottom: var(--base-spacing-unit-sm);
+    }
+  }
+}

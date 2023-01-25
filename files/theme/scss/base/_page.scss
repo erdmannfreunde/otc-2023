@@ -1,0 +1,18 @@
+// *
+// * Erdmann & Freunde
+// * OPTIMIST Contao Theme
+// * erdmann-freunde.de/produkte/contao-themes/optimist/
+// *
+
+//
+// BASE/PAGE
+// --------------------------------------------------
+
+@import '../../../assets/nutshell/scss/base/page';
+
+// --------------------------------------------------
+
+// add smooth scrolling via css
+html {
+  scroll-behavior: smooth;
+}
