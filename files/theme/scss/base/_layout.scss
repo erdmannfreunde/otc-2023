@@ -35,14 +35,14 @@
 
 // #header
 [id='header'] {
+  border-bottom: var(--layout-header-border);
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+
   .inside {
-    padding-top: var(--base-spacing-unit);
-    padding-bottom: var(--base-spacing-unit);
     display: grid;
     grid-template-columns: auto auto;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
     position: relative;
 
     @supports not (display: grid) {
