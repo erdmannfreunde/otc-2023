@@ -12,10 +12,6 @@
 .logo {
   pointer-events: auto;
 
-  @include media-query(screen-menu) {
-    padding-bottom: var(--base-spacing-unit-sm);
-  }
-
   img {
     margin-left: 0;
     width: 160px;
