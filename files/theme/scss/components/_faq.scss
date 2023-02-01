@@ -40,6 +40,22 @@
   }
 }
 
+.faq-grid {
+  @extend .faq-list;
+
+  ul {
+    @include media-query(screen-md) {
+      @include make-row;
+    }
+  }
+
+  li {
+    @include media-query(screen-md) {
+      @include make-col(6);
+    }
+  }
+}
+
 .faq-page {
   article {
     > #{headings()} {
