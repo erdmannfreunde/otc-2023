@@ -30,6 +30,10 @@ $breakpoints: (
   ),
   xl: (
     min:        68.75em, // 1100px
+    max:        (100em - $max-diff) // 1599px
+  ),
+  xxl: (
+    min:        100em, // 1600px
     max:        "none"
   ),
 );
