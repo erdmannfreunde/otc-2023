@@ -15,4 +15,8 @@
 // add smooth scrolling via css
 html {
   scroll-behavior: smooth;
+
+  @include media-query(screen-xxl) {
+    font-size: var(--base-font-size-xxl);
+  }
 }
