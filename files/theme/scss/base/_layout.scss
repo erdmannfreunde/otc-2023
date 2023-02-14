@@ -36,9 +36,12 @@
 // #header
 [id='header'] {
   border-bottom: var(--layout-header-border);
-  position: sticky;
   top: 0;
   z-index: 1001;
+
+  @include media-query(screen-md) {
+    position: sticky;
+  }
 
   .inside {
     display: grid;
