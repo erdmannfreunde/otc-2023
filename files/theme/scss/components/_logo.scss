@@ -11,9 +11,12 @@
 // company brand
 .logo {
   pointer-events: auto;
-  grid-row: span 2;
-  align-self: end;
-  padding-bottom: var(--base-spacing-unit);
+
+  @include media-query(screen-md) {
+    grid-row: span 2;
+    align-self: end;
+    padding-bottom: var(--base-spacing-unit);
+  }
 
   img {
     margin-left: 0;

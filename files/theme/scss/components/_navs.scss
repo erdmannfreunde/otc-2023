@@ -39,14 +39,25 @@
   a.opening_hours {
     &::before {
       content: '';
-      width: var(--base-spacing-unit);
-      height: var(--base-spacing-unit);
+      width: 1.5rem;
+      height: 1.5rem;
       display: inline-block;
       vertical-align: text-bottom;
       margin-right: var(--base-spacing-unit-xs);
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
+
+      @include media-query(screen-md) {
+        width: var(--base-spacing-unit);
+        height: var(--base-spacing-unit);
+      }
+    }
+
+    .title {
+      @include media-query(screen-sm-max) {
+        @include invisible;
+      }
     }
   }
 
@@ -63,12 +74,14 @@
   }
 
   a.opening_hours {
-    @extend %button;
+    @include media-query(screen-md) {
+      @extend %button;
 
-    background: var(--color-blue-alpha);
-    font-weight: 600;
-    color: var(--color-brand-primary);
-    padding-left: var(--base-spacing-unit-sm);
+      background: var(--color-blue-alpha);
+      font-weight: 600;
+      color: var(--color-brand-primary);
+      padding-left: var(--base-spacing-unit-sm);
+    }
 
     &::before {
       background-image: url('/files/theme/img/icons/opening_hours.svg');

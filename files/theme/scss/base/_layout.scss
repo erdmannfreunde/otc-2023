@@ -45,11 +45,15 @@
 
   .inside {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr auto;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     position: relative;
+
+    @include media-query(screen-md) {
+      grid-template-columns: auto auto;
+    }
 
     @supports not (display: grid) {
       display: -webkit-box;
@@ -81,7 +85,7 @@
     padding-top: var(--base-spacing-unit);
     padding-bottom: var(--base-spacing-unit-xs);
 
-    @include media-query(screen-xl) {
+    @include media-query(screen-xxl) {
       padding-top: var(--base-spacing-unit-lg);
       padding-bottom: var(--base-spacing-unit-sm);
     }
