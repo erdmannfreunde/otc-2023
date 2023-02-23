@@ -9,7 +9,9 @@
         "contao/manager-bundle": "4.13.*",
         "contao/news-bundle": "4.13.*",
         "contao/newsletter-bundle": "4.13.*",
-        "erdmannfreunde/optimist-theme-bundle": "2.0.2"
+        "erdmannfreunde/optimist-theme-bundle": "2.0.2",
+        "fritzmg/contao-swiper": "^4.3",
+        "oveleon/contao-cookiebar": "^1.12"
     },
     "extra": {
         "public-dir": "public",
