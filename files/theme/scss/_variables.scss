@@ -299,6 +299,18 @@
   --card-padding:       var(--base-spacing-unit);
   // --------------------------------------------------
 
+  // COMPONENTS/CONSENT
+  --consent-button-background:       var(--color-blue-alpha);
+  --consent-button-color:            var(--color-blue);
+  --consent-button-border:           var(--base-border-width) solid var(--button-blue-alpha);
+  --consent-button-border-radius:    var(--button-border-radius);
+  --consent-button-font-weight:      600;
+  --consent-button-background-hover: var(--button-background-hover);
+  --consent-button-color-hover:      var(--color-text-inverted);
+
+  --consent-checkbox-background-active: var(--color-blue-alpha);
+  --consent-checkbox-input-active:      var(--color-blue);
+
   // HELPER/TRUMPS
 
   // --------------------------------------------------

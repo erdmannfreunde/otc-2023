@@ -1,0 +1,41 @@
+// *
+// * Erdmann & Freunde
+// * OPTIMIST Contao Theme
+// * erdmann-freunde.de/produkte/contao-themes/optimist/
+// *
+
+//
+// COMPONENTS/CONSENT
+// --------------------------------------------------
+
+.contao-cookiebar {
+  .cc-btn {
+    background: var(--consent-button-background);
+    color: var(--consent-button-color);
+    border: var(--consent-button-border);
+    border-radius: var(--consent-button-border-radius);
+    font-weight: var(--consent-button-font-weight);
+
+    &:hover {
+      background: var(--consent-button-background-hover);
+      color: var(--consent-button-color-hover);
+    }
+  }
+
+  input {
+    &:checked {
+      + {
+        label {
+          &:after {
+            background: var(--consent-checkbox-input-active);
+          }
+          
+          &:before {
+            background: var(--consent-checkbox-background-active);
+            border-color: var(--consent-checkbox-input-active);
+          }
+        }
+      }
+    }
+  }
+}
