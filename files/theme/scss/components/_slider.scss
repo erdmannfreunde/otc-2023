@@ -8,40 +8,21 @@
 // COMPONENTS/SLIDER
 // --------------------------------------------------
 
-@import '../../../assets/nutshell/scss/components/slider';
+.ce_swiperStart {
 
-// --------------------------------------------------
-
-// sass-lint:disable no-universal-selectors
-.slider {
-  .slider-wrapper {
-    > * {
-      margin-bottom: 0;
-    }
+  .swiper-container {
+    padding-bottom: 2rem;
   }
 
-  .slider-control {
-    a {
-      width: calc(var(--slider-arrow-size) + var(--slider-arrow-padding) * 2);
-      height: calc(var(--slider-arrow-size) + var(--slider-arrow-padding) * 2);
-      overflow: hidden;
-      font-family: var(--base-font-family);
-    }
-  }
+  .swiper-pagination-bullet {
+    width: var(--slider-menu-point-size);
+    height: var(--slider-menu-point-size);
+    border: 2px solid var(--slider-menu-point-color);
+    background: transparent;
+    opacity: 1;
 
-  .slider-prev {
-    &::before {
-      content: '←';
+    &-active {
+      background: var(--slider-menu-point-color-active);
     }
-  }
-
-  .slider-next {
-    &::before {
-      content: '→';
-    }
-  }
-
-  .slider-menu {
-    font-size: var(--slider-menu-point-size);
   }
 }

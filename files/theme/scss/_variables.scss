@@ -231,8 +231,8 @@
   // COMPONENTS/SLIDER
   --slider-arrow-color:             var(--color-brand);
   --slider-arrow-size:              2rem;
-  --slider-menu-point-size:         2rem;
-  --slider-menu-point-color:        inherit;
+  --slider-menu-point-size:         1rem;
+  --slider-menu-point-color:        var(--color-brand);
   --slider-menu-point-color-active: var(--color-brand);
   --slider-arrow-padding:           var(--base-spacing-unit-sm);
   // --------------------------------------------------
